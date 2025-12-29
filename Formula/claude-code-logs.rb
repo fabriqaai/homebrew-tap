@@ -5,21 +5,21 @@
 class ClaudeCodeLogs < Formula
   desc "Browse and search Claude Code chat logs"
   homepage "https://github.com/fabriqaai/claude-code-logs"
-  version "0.1.5"
+  version "0.1.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/fabriqaai/claude-code-logs/releases/download/v0.1.5/claude-code-logs_0.1.5_darwin_amd64.tar.gz"
-      sha256 "ad25fae44de40c27ad725d25d3056661e00c62e491fbb1e6bde26c6e6e7026c8"
+      url "https://github.com/fabriqaai/claude-code-logs/releases/download/v0.1.6/claude-code-logs_0.1.6_darwin_amd64.tar.gz"
+      sha256 "2322f776a58fea1459a36fe90455510fa8a8820ce5b2a9fd4c97273e30e2744a"
 
       def install
         bin.install "claude-code-logs"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/fabriqaai/claude-code-logs/releases/download/v0.1.5/claude-code-logs_0.1.5_darwin_arm64.tar.gz"
-      sha256 "a2d88fc8697bdab930e89acbe1efd0cc0fa2d242af3562af259092ac2ad641ff"
+      url "https://github.com/fabriqaai/claude-code-logs/releases/download/v0.1.6/claude-code-logs_0.1.6_darwin_arm64.tar.gz"
+      sha256 "1dd27c5df3d2a308a52beee97898913b969656fd8f392309b79345ce90602866"
 
       def install
         bin.install "claude-code-logs"
@@ -29,8 +29,8 @@ class ClaudeCodeLogs < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fabriqaai/claude-code-logs/releases/download/v0.1.5/claude-code-logs_0.1.5_linux_amd64.tar.gz"
-      sha256 "a257cc26eac8afe54655420f3b6926a4599e74c8034d0bffafcba0f7f43a792b"
+      url "https://github.com/fabriqaai/claude-code-logs/releases/download/v0.1.6/claude-code-logs_0.1.6_linux_amd64.tar.gz"
+      sha256 "0a1a82e959a530265aa465f0ad4960d76816b9358c1532a51c7b331968540d1f"
       def install
         bin.install "claude-code-logs"
       end
