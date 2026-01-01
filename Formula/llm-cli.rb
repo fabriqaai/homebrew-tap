@@ -5,21 +5,21 @@
 class LlmCli < Formula
   desc "CLI wrapper for Claude and Gemini CLIs"
   homepage "https://github.com/fabriqaai/llm-cli"
-  version "0.1.9"
+  version "0.1.10"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/fabriqaai/llm-cli/releases/download/v0.1.9/llm-cli_0.1.9_darwin_amd64.tar.gz"
-      sha256 "87440c27c893bc6f334e24f591f82ba2823f5ee71414898cb1714f79cfea0d5a"
+      url "https://github.com/fabriqaai/llm-cli/releases/download/v0.1.10/llm-cli_0.1.10_darwin_amd64.tar.gz"
+      sha256 "0d7e6369437d7cbff7bc4a3aa331ef035195b8905499a6a0b6585eb6f423455d"
 
       def install
         bin.install "llm-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/fabriqaai/llm-cli/releases/download/v0.1.9/llm-cli_0.1.9_darwin_arm64.tar.gz"
-      sha256 "1f22d5f0a8e596e90227bc1531503115dc5738b29ee86de8b27c70130c7dfbeb"
+      url "https://github.com/fabriqaai/llm-cli/releases/download/v0.1.10/llm-cli_0.1.10_darwin_arm64.tar.gz"
+      sha256 "9b8288569db3fee0736146baed38ec0b7edb6867cc8ca551d9778f0eb30ebde2"
 
       def install
         bin.install "llm-cli"
@@ -29,15 +29,15 @@ class LlmCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fabriqaai/llm-cli/releases/download/v0.1.9/llm-cli_0.1.9_linux_amd64.tar.gz"
-      sha256 "64313e1f84b0773a8481d38910f27ac1d02445520c94d2c69c856128865e5c00"
+      url "https://github.com/fabriqaai/llm-cli/releases/download/v0.1.10/llm-cli_0.1.10_linux_amd64.tar.gz"
+      sha256 "0996dae9f75a44d7bd60a2689750489293b4d8eed4c7fd9e200e5ca7396bc149"
       def install
         bin.install "llm-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fabriqaai/llm-cli/releases/download/v0.1.9/llm-cli_0.1.9_linux_arm64.tar.gz"
-      sha256 "7d86e5010a952c6ec25804c059320928fc32573e0e0088ed4bf2e0a0ebed8953"
+      url "https://github.com/fabriqaai/llm-cli/releases/download/v0.1.10/llm-cli_0.1.10_linux_arm64.tar.gz"
+      sha256 "d37690f0648590288ed47995255f193f5a3e24e97b515aa4231138aa62c8f544"
       def install
         bin.install "llm-cli"
       end
