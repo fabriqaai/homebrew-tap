@@ -5,21 +5,21 @@
 class LlmCli < Formula
   desc "A unified CLI for Claude and Gemini LLMs"
   homepage "https://github.com/fabriqaai/llm-cli"
-  version "0.2.9"
+  version "0.2.10"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/fabriqaai/llm-cli/releases/download/v0.2.9/llm-cli_0.2.9_darwin_amd64.tar.gz"
-      sha256 "2121269a42ab7ed48421bd579eb4bb8fb60e85d1ec7f1d74536518f3180efd0e"
+      url "https://github.com/fabriqaai/llm-cli/releases/download/v0.2.10/llm-cli_0.2.10_darwin_amd64.tar.gz"
+      sha256 "412848d1c0707c549c598504f0f3162620172c7530ffbff04354f16af92c8d14"
 
       def install
         bin.install "llm-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/fabriqaai/llm-cli/releases/download/v0.2.9/llm-cli_0.2.9_darwin_arm64.tar.gz"
-      sha256 "713c805d8979d9b40370b3b48c47aec99a140394c0255769cb572440ca978819"
+      url "https://github.com/fabriqaai/llm-cli/releases/download/v0.2.10/llm-cli_0.2.10_darwin_arm64.tar.gz"
+      sha256 "5a6dbb6a6f8b9e770dfeb585b5a8cfaee734415fe38ff4839078ac616f44f42f"
 
       def install
         bin.install "llm-cli"
@@ -29,8 +29,8 @@ class LlmCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fabriqaai/llm-cli/releases/download/v0.2.9/llm-cli_0.2.9_linux_amd64.tar.gz"
-      sha256 "0d2abaaae353199a1ae8e7a150905aba4cf1b97cb7cc89b7baace675cea4ba3a"
+      url "https://github.com/fabriqaai/llm-cli/releases/download/v0.2.10/llm-cli_0.2.10_linux_amd64.tar.gz"
+      sha256 "9b489c5091a4707cca0a85692a726686f7a70a13ab4353b1ed7871641194c297"
       def install
         bin.install "llm-cli"
       end
